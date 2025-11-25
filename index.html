@@ -1,11 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday, My Love!</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <img src="pic1.jpg">
+
+<!-- Floating Hearts -->
+<div class="floating-hearts">
+    <span style="left:10%; animation-delay:0s;">❤️</span>
+    <span style="left:25%; animation-delay:1s;">💜</span>
+    <span style="left:40%; animation-delay:2s;">💖</span>
+    <span style="left:60%; animation-delay:1.5s;">💗</span>
+    <span style="left:75%; animation-delay:0.5s;">💓</span>
+</div>
+
+<div class="container" id="mainContainer">
+
+    <!-- Locked Screen -->
+    <div id="lockedState" class="locked">
+        <i class="fas fa-lock lock-icon"></i>
+        <h1>Surprise is Locked ⛔💗</h1>
+        <p>
+            <i class="fas fa-heart heart"></i>  
+            Shhh... the birthday magic isn’t ready yet!  
+            Something adorable is coming...  
+        </p>
+        <div id="countdown" class="countdown"></div>
+        <div class="hint">✨Hint: Patience brings magic!✨</div>
+
+        <!-- Sparkles -->
+        <span class="sparkle" style="left:10%; animation-delay:0s;">✨</span>
+        <span class="sparkle" style="left:25%; animation-delay:1s;">✨</span>
+        <span class="sparkle" style="left:50%; animation-delay:0.5s;">✨</span>
+        <span class="sparkle" style="left:70%; animation-delay:1.5s;">✨</span>
+        <span class="sparkle" style="left:85%; animation-delay:0.2s;">✨</span>
+    </div>
+
+    <!-- Unlocked Screen -->
+    <div id="unlockedState" style="display: none;">
+        <i class="fas fa-heart heart"></i>
+
+        <!-- Gallery Buttons -->
+        <div class="photo-buttons">
+            <button onclick="openGallery('cuteYou')">💗 Cute You</button>
+            <button onclick="openGallery('milestone')">🎉 Milestone</button>
+            <button onclick="openGallery('twoK25')">✨ 2k25</button>
+
+        </div>
+
+        <h1>Happy Birthday, My Love! 🎀🎉</h1>
+        <p class="message">
+            Today is the day the universe gifted me the most precious person ever... **YOU**.<br><br>
+            Your smile melts my stress.<br>
+            Your voice calms my chaos.<br>
+            Your presence makes my entire world soft and warm like a cozy night.<br><br>
+            I hope this year brings you unlimited happiness, magical moments, success, and every dream you hold close.<br><br>
+            Always remember — **You are loved. You are special. You are my forever favourite person.**<br><br>
+            With all my love,<br>
+            <b>[Your Name]</b> 💗✨
+        </p>
+
+        <!-- Notes Buttons -->
+        <div class="note-buttons">
+            <button onclick="window.location.href='note1.html'">📝 Note 1</button>
+            <button onclick="window.location.href='note2.html'">📝 Note 2</button>
+        </div>
+    </div>
+</div>
+
+<!-- Photo Viewer -->
+<div class="photo-viewer" id="photoViewer">
+    <div class="photo-card" id="photoCard">
+        <span class="close-btn" onclick="closeGallery()">&times;</span>
+        <i class="fas fa-chevron-left arrow arrow-left" onclick="prevPhoto()"></i>
+        <img id="galleryImg" src="" alt="Memory">
+        <div class="caption" id="galleryCaption"></div>
+        <i class="fas fa-chevron-right arrow arrow-right" onclick="nextPhoto()"></i>
+    </div>
+</div>
+<script src="captions.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
