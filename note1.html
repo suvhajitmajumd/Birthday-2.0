@@ -8,7 +8,14 @@
 </head>
 <body>
 
-<div class="note-container">
+<div id="lockScreen" class="lock-screen">
+    <i class="fas fa-lock lock-icon"></i>
+    <h2>This Note is Locked ⛔💗</h2>
+    <p>The surprise will open soon…</p>
+    <div id="countdown" class="countdown"></div>
+</div>
+
+<div class="note-container" id="noteContent" style="display:none;">
 
     <h1>📝 Note 1</h1>
 
@@ -55,6 +62,8 @@
 
     <button onclick="window.location.href='index.html'">⬅ Back to Main</button>
 </div>
+<script src="notes.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
 
 </body>
 </html>
