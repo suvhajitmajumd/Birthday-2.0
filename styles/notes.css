@@ -1,7 +1,7 @@
 .lock-screen {
     text-align: center;
     padding: 80px 20px;
-    color: white;
+    color: #E6EBFF;
 }
 .lock-icon {
     font-size: 75px;
@@ -12,11 +12,12 @@
     margin-top: 10px;
 }
 
+/* ---------------- GLOBAL ---------------- */
 body {
     margin: 0;
     font-family: "Poppins", sans-serif;
-    background: linear-gradient(135deg, #000000, #6A3E63);
-    color: #FFF1E6;
+    background: linear-gradient(135deg, #0A0B1E, #3C3F82, #7E7DF2);
+    color: #E6EBFF;
 }
 
 .note-container {
@@ -27,8 +28,9 @@ body {
 
 h1 {
     text-align: center;
-    color: #B497BD;
+    color: #C8C4FF;
     margin-bottom: 30px;
+    font-weight: 600;
 }
 
 /* ---------------- NOTE ENTRY ---------------- */
@@ -38,6 +40,14 @@ h1 {
     gap: 20px;
     margin-bottom: 40px;
     flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 20px;
+    transition: 0.25s;
+}
+.note-entry:hover {
+    transform: translateY(-4px);
+    background: rgba(255,255,255,0.08);
 }
 
 .note-entry.reverse {
@@ -49,13 +59,14 @@ h1 {
     height: 200px;
     object-fit: cover;
     border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    box-shadow: 0 8px 25px rgba(64, 78, 180, 0.4);
 }
 
 .note-text {
     flex: 1;
     font-size: 1.1em;
-    line-height: 1.6;
+    line-height: 1.7;
+    color: #DCE2FF;
 }
 
 /* ---------------- BUTTON ---------------- */
@@ -64,27 +75,28 @@ button {
     margin: 0 auto;
     padding: 12px 25px;
     font-size: 1em;
-    color: #000;
-    background: #B497BD;
+    color: #0A0B1E;
+    background: #C8C4FF;
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    transition: 0.2s;
+    transition: 0.25s;
+    font-weight: 600;
 }
-
 button:hover {
-    background: #F4C2C2;
-    transform: scale(1.05);
+    background: #9FA5FF;
+    transform: scale(1.08);
 }
 
-/* ---------------- RESPONSIVENESS ---------------- */
+/* ---------------- RESPONSIVE ---------------- */
 @media (max-width: 768px) {
     .note-entry {
         flex-direction: column !important;
         text-align: center;
+        padding: 18px;
     }
     .note-img img {
-        width: 90%;
+        width: 100%;
         height: auto;
     }
 }
