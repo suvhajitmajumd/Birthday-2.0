@@ -1,4 +1,4 @@
-let unlockDate = new Date("Nov 05, 2025 00:00:00").getTime();
+let unlockDate = new Date("Dec 05, 2025 00:00:00").getTime();
 
 let timer = setInterval(function() {
     let now = new Date().getTime();
