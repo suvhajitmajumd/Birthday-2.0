@@ -109,3 +109,36 @@ body {
 
 /* -------------------- RESPONSIVE -------------------- */
 @media (max-width:480px){h1{font-size:1.8em;}p{font-size:1em;}.container{padding:20px;}.photo-buttons button{font-size:1em;padding:10px 16px;}.arrow-left{left:5px;}.arrow-right{right:5px;}}
+
+
+#musicBar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #0A0F24;
+  color: #EAEAFE;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: Poppins, sans-serif;
+}
+
+#playPauseBtn, #musicBar button {
+  background: #9e4b89;
+  color: #01003d;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#progressBar {
+  width: 200px;
+}
+
+#volumeBar {
+  width: 80px;
+}
