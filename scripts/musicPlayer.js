@@ -2,10 +2,17 @@
 // SONG LIST
 // ============================
 const songs = [
-  { file: "music/song1.mp3", name: "Tokyo Lo-Fi Nights" },
-  { file: "music/song2.mp3", name: "Frozen Winter Love" },
-  { file: "music/song3.mp3", name: "Chillhop Sunset" },
-  { file: "music/song4.mp3", name: "Study & Focus Beats" }
+  { file: "music/song1.mp3", name: "Ranjhay ve" },
+  { file: "music/song2.mp3", name: "Amaro Porano Jaha Chay" },
+  { file: "music/song3.mp3", name: "Akesheo Olpo Nile" },
+  { file: "music/song4.mp3", name: "Tapur Tupur Bristi Nupur" },
+  { file: "music/song5.mp3",name: "Nile Digonte"},
+  { file: "music/song6.mp3",name: "Dil Ibaadat"},
+  { file: "music/song7.mp3",name: "Khuda Jane"},
+  { file: "music/song8.mp3",name: "Labon Ko"},
+  { file: "music/song9.mp3",name: "Pal Pal"},
+  { file: "music/song10.mp3",name: "Zara sa"},
+  { file: "music/song11.mp3",name: "Tujhe Dekha To"}
 ];
 
 let audio = new Audio();
